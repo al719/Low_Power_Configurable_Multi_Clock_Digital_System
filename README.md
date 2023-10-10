@@ -19,4 +19,4 @@ RTL to GDS Implementation of Low_Power_Configurable_Multi_Clock_Digital_System w
 
 ## P&R Layout 
 ![System Layout](System/images/1.png "System Layout") *System Layout*
-![System Layout](System/images/Screenshot 2023-10-10 042156.png "System Layout") *System Layout*
+![System Layout](System/images/2.png "System Layout") *System Layout*
