@@ -1,0 +1,36 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : SYS_TOP
+Version: K-2015.06
+Date   : Thu Sep 21 16:17:06 2023
+****************************************
+
+
+   max_delay/setup ('GATED_CLK' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   alu/ALU_OUT_reg[5]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[6]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[7]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[8]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[9]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[10]/SE       9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[11]/SE       9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[12]/SE       9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[13]/SE       9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[14]/SE       9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[15]/SE       9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[0]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[1]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[2]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[3]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/ALU_OUT_reg[4]/SE        9.26          20.18 r       -10.92  (VIOLATED)
+   alu/OUT_VALID_reg/SE         9.26          20.18 r       -10.92  (VIOLATED)
+
+
+1

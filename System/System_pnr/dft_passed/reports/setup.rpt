@@ -1,0 +1,1565 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : SYS_TOP
+Version: K-2015.06
+Date   : Thu Sep 21 16:17:06 2023
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[15]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[15]/SE (SDFFRQX4M)       0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[15]/CK (SDFFRQX4M)       0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[14]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[14]/SE (SDFFRQX4M)       0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[14]/CK (SDFFRQX4M)       0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[13]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[13]/SE (SDFFRQX4M)       0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[13]/CK (SDFFRQX4M)       0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[12]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[12]/SE (SDFFRQX4M)       0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[12]/CK (SDFFRQX4M)       0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[11]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[11]/SE (SDFFRQX4M)       0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[11]/CK (SDFFRQX4M)       0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[10]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[10]/SE (SDFFRQX4M)       0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[10]/CK (SDFFRQX4M)       0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[9]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[9]/SE (SDFFRQX4M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[9]/CK (SDFFRQX4M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[8]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[8]/SE (SDFFRQX4M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[8]/CK (SDFFRQX4M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[7]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[7]/SE (SDFFRQX4M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[7]/CK (SDFFRQX4M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[6]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[6]/SE (SDFFRQX4M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[6]/CK (SDFFRQX4M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[5]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[5]/SE (SDFFRQX4M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[5]/CK (SDFFRQX4M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/OUT_VALID_reg
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/OUT_VALID_reg/SE (SDFFRQX1M)         0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[0]/SE (SDFFRQX1M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[0]/CK (SDFFRQX1M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[1]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[1]/SE (SDFFRQX1M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[1]/CK (SDFFRQX1M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[2]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[2]/SE (SDFFRQX1M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[2]/CK (SDFFRQX1M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[3]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[3]/SE (SDFFRQX1M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[3]/CK (SDFFRQX1M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: SE (input port clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[4]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock SCAN_CLK (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    20.00      20.00 r
+  SE (in)                                  0.04      20.04 r
+  alu/test_se (ALU_test_1)                 0.00      20.04 r
+  alu/U4/Y (BUFX10M)                       0.14      20.18 r
+  alu/ALU_OUT_reg[4]/SE (SDFFRQX1M)        0.00      20.18 r
+  data arrival time                                  20.18
+
+  clock GATED_CLK (rise edge)             10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.20       9.80
+  alu/ALU_OUT_reg[4]/CK (SDFFRQX1M)        0.00       9.80 r
+  library setup time                      -0.54       9.26
+  data required time                                  9.26
+  -----------------------------------------------------------
+  data required time                                  9.26
+  data arrival time                                 -20.18
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.92
+
+
+  Startpoint: RegFile/mem_reg[1][7]
+              (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[0]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCAN_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  RegFile/mem_reg[1][7]/CK (SDFFRHQX4M)                   0.00       0.00 r
+  RegFile/mem_reg[1][7]/Q (SDFFRHQX4M)                    0.30       0.30 r
+  RegFile/REG1[7] (RegisterFile_test_1)                   0.00       0.30 r
+  alu/B[7] (ALU_test_1)                                   0.00       0.30 r
+  alu/U24/Y (INVX4M)                                      0.05       0.36 f
+  alu/U26/Y (CLKINVX8M)                                   0.06       0.41 r
+  alu/div_23/b[7] (ALU_DW_div_uns_1)                      0.00       0.41 r
+  alu/div_23/U74/Y (INVX4M)                               0.05       0.46 f
+  alu/div_23/U42/Y (NAND2BX8M)                            0.06       0.52 r
+  alu/div_23/U40/Y (INVX4M)                               0.04       0.57 f
+  alu/div_23/U8/Y (NAND2X4M)                              0.08       0.65 r
+  alu/div_23/U180/Y (CLKINVX6M)                           0.07       0.72 f
+  alu/div_23/U178/Y (NAND2X6M)                            0.07       0.78 r
+  alu/div_23/U133/Y (CLKINVX8M)                           0.06       0.84 f
+  alu/div_23/U83/Y (AND2X12M)                             0.16       1.00 f
+  alu/div_23/U161/Y (MXI2X6M)                             0.13       1.13 f
+  alu/div_23/U1/Y (NAND2X4M)                              0.09       1.22 r
+  alu/div_23/U122/Y (NAND3X4M)                            0.09       1.31 f
+  alu/div_23/U78/Y (NOR2BX8M)                             0.13       1.43 f
+  alu/div_23/U181/Y (INVX4M)                              0.06       1.49 r
+  alu/div_23/U22/Y (NAND2X4M)                             0.06       1.55 f
+  alu/div_23/U21/Y (CLKNAND2X8M)                          0.08       1.63 r
+  alu/div_23/u_div/u_fa_PartRem_0_5_1/CO (ADDFHX4M)       0.35       1.98 r
+  alu/div_23/u_div/u_fa_PartRem_0_5_2/CO (ADDFHX2M)       0.16       2.14 r
+  alu/div_23/U72/Y (INVX2M)                               0.05       2.19 f
+  alu/div_23/U150/Y (NOR2XLM)                             0.14       2.33 r
+  alu/div_23/U49/Y (CLKINVX2M)                            0.10       2.43 f
+  alu/div_23/U137/Y (INVX2M)                              0.09       2.52 r
+  alu/div_23/U7/Y (NAND2XLM)                              0.14       2.66 f
+  alu/div_23/U175/Y (CLKNAND2X4M)                         0.10       2.75 r
+  alu/div_23/U169/Y (NAND2XLM)                            0.11       2.86 f
+  alu/div_23/U170/Y (NAND3X2M)                            0.09       2.95 r
+  alu/div_23/u_div/u_fa_PartRem_0_4_3/CO (ADDFHX1M)       0.20       3.15 r
+  alu/div_23/U184/Y (INVX3M)                              0.05       3.20 f
+  alu/div_23/U183/Y (NOR2X3M)                             0.17       3.37 r
+  alu/div_23/U182/Y (MXI2X6M)                             0.15       3.52 r
+  alu/div_23/U37/Y (NAND2X2M)                             0.10       3.62 f
+  alu/div_23/U36/Y (NAND3X4M)                             0.10       3.72 r
+  alu/div_23/U10/Y (NAND2X2M)                             0.09       3.81 f
+  alu/div_23/U112/Y (NAND3X4M)                            0.09       3.91 r
+  alu/div_23/U67/Y (NAND2X2M)                             0.07       3.98 f
+  alu/div_23/U66/Y (NAND3X2M)                             0.09       4.07 r
+  alu/div_23/u_div/u_fa_PartRem_0_3_4/CO (ADDFHX2M)       0.19       4.26 r
+  alu/div_23/U177/Y (INVX4M)                              0.05       4.30 f
+  alu/div_23/U76/Y (NOR2X4M)                              0.16       4.46 r
+  alu/div_23/U45/Y (MX2XLM)                               0.38       4.85 f
+  alu/div_23/u_div/u_fa_PartRem_0_2_2/CO (ADDFHX2M)       0.42       5.27 f
+  alu/div_23/u_div/u_fa_PartRem_0_2_3/CO (ADDFHX2M)       0.23       5.50 f
+  alu/div_23/u_div/u_fa_PartRem_0_2_4/CO (ADDFHX2M)       0.22       5.72 f
+  alu/div_23/u_div/u_fa_PartRem_0_2_5/CO (ADDFHX1M)       0.25       5.97 f
+  alu/div_23/U26/Y (CLKINVX2M)                            0.07       6.04 r
+  alu/div_23/U75/Y (NAND2BX2M)                            0.12       6.16 r
+  alu/div_23/U13/Y (INVX3M)                               0.07       6.23 f
+  alu/div_23/U39/Y (MXI2XLM)                              0.18       6.41 r
+  alu/div_23/U168/Y (INVX2M)                              0.10       6.51 f
+  alu/div_23/U32/Y (NAND2X1M)                             0.10       6.60 r
+  alu/div_23/U2/Y (NAND3X3M)                              0.10       6.71 f
+  alu/div_23/u_div/u_fa_PartRem_0_1_3/CO (ADDFHX4M)       0.23       6.94 f
+  alu/div_23/u_div/u_fa_PartRem_0_1_4/CO (ADDFHX4M)       0.23       7.17 f
+  alu/div_23/U69/Y (CLKNAND2X2M)                          0.09       7.25 r
+  alu/div_23/U115/Y (NAND3X4M)                            0.10       7.36 f
+  alu/div_23/U116/Y (NAND2X2M)                            0.09       7.45 r
+  alu/div_23/U27/Y (NAND3X4M)                             0.10       7.55 f
+  alu/div_23/U81/Y (NOR2BX8M)                             0.13       7.68 f
+  alu/div_23/U80/Y (CLKINVX6M)                            0.04       7.72 r
+  alu/div_23/U95/Y (NAND2X4M)                             0.04       7.76 f
+  alu/div_23/U16/Y (CLKAND2X6M)                           0.12       7.89 f
+  alu/div_23/U15/Y (CLKNAND2X2M)                          0.07       7.96 r
+  alu/div_23/U14/Y (NAND3X3M)                             0.10       8.05 f
+  alu/div_23/U96/Y (CLKNAND2X2M)                          0.07       8.12 r
+  alu/div_23/U98/Y (NAND3X2M)                             0.10       8.22 f
+  alu/div_23/u_div/u_fa_PartRem_0_0_3/CO (ADDFHX2M)       0.25       8.47 f
+  alu/div_23/u_div/u_fa_PartRem_0_0_4/CO (ADDFHX4M)       0.23       8.71 f
+  alu/div_23/U172/Y (CLKNAND2X4M)                         0.08       8.78 r
+  alu/div_23/U174/Y (NAND3X6M)                            0.09       8.88 f
+  alu/div_23/u_div/u_fa_PartRem_0_0_6/CO (ADDFHX4M)       0.21       9.09 f
+  alu/div_23/U34/Y (NAND2X1M)                             0.08       9.17 r
+  alu/div_23/U126/Y (NAND3X2M)                            0.09       9.25 f
+  alu/div_23/quotient[0] (ALU_DW_div_uns_1)               0.00       9.25 f
+  alu/U23/Y (CLKNAND2X2M)                                 0.07       9.32 r
+  alu/U34/Y (NAND2X2M)                                    0.05       9.37 f
+  alu/ALU_OUT_reg[0]/D (SDFFRQX1M)                        0.00       9.37 f
+  data arrival time                                                  9.37
+
+  clock GATED_CLK (rise edge)                            10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  alu/ALU_OUT_reg[0]/CK (SDFFRQX1M)                       0.00       9.80 r
+  library setup time                                     -0.39       9.41
+  data required time                                                 9.41
+  --------------------------------------------------------------------------
+  data required time                                                 9.41
+  data arrival time                                                 -9.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: RegFile/mem_reg[1][7]
+              (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[1]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCAN_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  RegFile/mem_reg[1][7]/CK (SDFFRHQX4M)                   0.00       0.00 r
+  RegFile/mem_reg[1][7]/Q (SDFFRHQX4M)                    0.30       0.30 r
+  RegFile/REG1[7] (RegisterFile_test_1)                   0.00       0.30 r
+  alu/B[7] (ALU_test_1)                                   0.00       0.30 r
+  alu/U24/Y (INVX4M)                                      0.05       0.36 f
+  alu/U26/Y (CLKINVX8M)                                   0.06       0.41 r
+  alu/div_23/b[7] (ALU_DW_div_uns_1)                      0.00       0.41 r
+  alu/div_23/U74/Y (INVX4M)                               0.05       0.46 f
+  alu/div_23/U42/Y (NAND2BX8M)                            0.06       0.52 r
+  alu/div_23/U40/Y (INVX4M)                               0.04       0.57 f
+  alu/div_23/U8/Y (NAND2X4M)                              0.08       0.65 r
+  alu/div_23/U180/Y (CLKINVX6M)                           0.07       0.72 f
+  alu/div_23/U178/Y (NAND2X6M)                            0.07       0.78 r
+  alu/div_23/U133/Y (CLKINVX8M)                           0.06       0.84 f
+  alu/div_23/U83/Y (AND2X12M)                             0.16       1.00 f
+  alu/div_23/U161/Y (MXI2X6M)                             0.13       1.13 f
+  alu/div_23/U1/Y (NAND2X4M)                              0.09       1.22 r
+  alu/div_23/U122/Y (NAND3X4M)                            0.09       1.31 f
+  alu/div_23/U78/Y (NOR2BX8M)                             0.13       1.43 f
+  alu/div_23/U181/Y (INVX4M)                              0.06       1.49 r
+  alu/div_23/U22/Y (NAND2X4M)                             0.06       1.55 f
+  alu/div_23/U21/Y (CLKNAND2X8M)                          0.08       1.63 r
+  alu/div_23/u_div/u_fa_PartRem_0_5_1/CO (ADDFHX4M)       0.35       1.98 r
+  alu/div_23/u_div/u_fa_PartRem_0_5_2/CO (ADDFHX2M)       0.16       2.14 r
+  alu/div_23/U72/Y (INVX2M)                               0.05       2.19 f
+  alu/div_23/U150/Y (NOR2XLM)                             0.14       2.33 r
+  alu/div_23/U49/Y (CLKINVX2M)                            0.10       2.43 f
+  alu/div_23/U137/Y (INVX2M)                              0.09       2.52 r
+  alu/div_23/U7/Y (NAND2XLM)                              0.14       2.66 f
+  alu/div_23/U175/Y (CLKNAND2X4M)                         0.10       2.75 r
+  alu/div_23/U169/Y (NAND2XLM)                            0.11       2.86 f
+  alu/div_23/U170/Y (NAND3X2M)                            0.09       2.95 r
+  alu/div_23/u_div/u_fa_PartRem_0_4_3/CO (ADDFHX1M)       0.20       3.15 r
+  alu/div_23/U184/Y (INVX3M)                              0.05       3.20 f
+  alu/div_23/U183/Y (NOR2X3M)                             0.17       3.37 r
+  alu/div_23/U182/Y (MXI2X6M)                             0.15       3.52 r
+  alu/div_23/U37/Y (NAND2X2M)                             0.10       3.62 f
+  alu/div_23/U36/Y (NAND3X4M)                             0.10       3.72 r
+  alu/div_23/U10/Y (NAND2X2M)                             0.09       3.81 f
+  alu/div_23/U112/Y (NAND3X4M)                            0.09       3.91 r
+  alu/div_23/U67/Y (NAND2X2M)                             0.07       3.98 f
+  alu/div_23/U66/Y (NAND3X2M)                             0.09       4.07 r
+  alu/div_23/u_div/u_fa_PartRem_0_3_4/CO (ADDFHX2M)       0.19       4.26 r
+  alu/div_23/U177/Y (INVX4M)                              0.05       4.30 f
+  alu/div_23/U76/Y (NOR2X4M)                              0.16       4.46 r
+  alu/div_23/U45/Y (MX2XLM)                               0.38       4.85 f
+  alu/div_23/u_div/u_fa_PartRem_0_2_2/CO (ADDFHX2M)       0.42       5.27 f
+  alu/div_23/u_div/u_fa_PartRem_0_2_3/CO (ADDFHX2M)       0.23       5.50 f
+  alu/div_23/u_div/u_fa_PartRem_0_2_4/CO (ADDFHX2M)       0.22       5.72 f
+  alu/div_23/u_div/u_fa_PartRem_0_2_5/CO (ADDFHX1M)       0.25       5.97 f
+  alu/div_23/U26/Y (CLKINVX2M)                            0.07       6.04 r
+  alu/div_23/U75/Y (NAND2BX2M)                            0.12       6.16 r
+  alu/div_23/U13/Y (INVX3M)                               0.07       6.23 f
+  alu/div_23/U39/Y (MXI2XLM)                              0.18       6.41 r
+  alu/div_23/U168/Y (INVX2M)                              0.10       6.51 f
+  alu/div_23/U32/Y (NAND2X1M)                             0.10       6.60 r
+  alu/div_23/U2/Y (NAND3X3M)                              0.10       6.71 f
+  alu/div_23/u_div/u_fa_PartRem_0_1_3/CO (ADDFHX4M)       0.23       6.94 f
+  alu/div_23/u_div/u_fa_PartRem_0_1_4/CO (ADDFHX4M)       0.23       7.17 f
+  alu/div_23/U69/Y (CLKNAND2X2M)                          0.09       7.25 r
+  alu/div_23/U115/Y (NAND3X4M)                            0.10       7.36 f
+  alu/div_23/U116/Y (NAND2X2M)                            0.09       7.45 r
+  alu/div_23/U27/Y (NAND3X4M)                             0.10       7.55 f
+  alu/div_23/U179/Y (NAND2BXLM)                           0.11       7.66 r
+  alu/div_23/U73/Y (INVX2M)                               0.11       7.77 f
+  alu/div_23/quotient[1] (ALU_DW_div_uns_1)               0.00       7.77 f
+  alu/U88/Y (AOI22XLM)                                    0.15       7.93 r
+  alu/U38/Y (NAND3BXLM)                                   0.15       8.08 f
+  alu/U37/Y (CLKMX2X2M)                                   0.22       8.29 f
+  alu/ALU_OUT_reg[1]/D (SDFFRQX1M)                        0.00       8.29 f
+  data arrival time                                                  8.29
+
+  clock GATED_CLK (rise edge)                            10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  alu/ALU_OUT_reg[1]/CK (SDFFRQX1M)                       0.00       9.80 r
+  library setup time                                     -0.40       9.40
+  data required time                                                 9.40
+  --------------------------------------------------------------------------
+  data required time                                                 9.40
+  data arrival time                                                 -8.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.11
+
+
+  Startpoint: RegFile/mem_reg[0][0]
+              (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Endpoint: alu/ALU_OUT_reg[15]
+            (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Path Group: GATED_CLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock SCAN_CLK (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  RegFile/mem_reg[0][0]/CK (SDFFRQX2M)                    0.00       0.00 r
+  RegFile/mem_reg[0][0]/Q (SDFFRQX2M)                     0.79       0.79 r
+  RegFile/REG0[0] (RegisterFile_test_1)                   0.00       0.79 r
+  alu/A[0] (ALU_test_1)                                   0.00       0.79 r
+  alu/mult_22/A[0] (ALU_DW02_mult_0)                      0.00       0.79 r
+  alu/mult_22/U50/Y (INVX2M)                              0.21       1.00 f
+  alu/mult_22/U114/Y (NOR2X1M)                            0.19       1.20 r
+  alu/mult_22/U4/Y (AND2X2M)                              0.16       1.36 r
+  alu/mult_22/S2_2_2/CO (ADDFX2M)                         0.54       1.90 r
+  alu/mult_22/S2_3_2/CO (ADDFX2M)                         0.55       2.45 r
+  alu/mult_22/S2_4_2/CO (ADDFX2M)                         0.55       3.00 r
+  alu/mult_22/S2_5_2/CO (ADDFX2M)                         0.55       3.55 r
+  alu/mult_22/S2_6_2/CO (ADDFX2M)                         0.55       4.10 r
+  alu/mult_22/S4_2/S (ADDFX2M)                            0.58       4.68 f
+  alu/mult_22/U11/Y (CLKXOR2X2M)                          0.31       4.99 r
+  alu/mult_22/FS_1/A[7] (ALU_DW01_add_1)                  0.00       4.99 r
+  alu/mult_22/FS_1/U2/Y (NAND2X2M)                        0.07       5.06 f
+  alu/mult_22/FS_1/U31/Y (OA21X1M)                        0.37       5.43 f
+  alu/mult_22/FS_1/U28/Y (AOI2BB1X1M)                     0.26       5.69 f
+  alu/mult_22/FS_1/U26/Y (OA21X1M)                        0.40       6.09 f
+  alu/mult_22/FS_1/U21/Y (OAI21BX1M)                      0.25       6.34 r
+  alu/mult_22/FS_1/U19/Y (OAI21X1M)                       0.13       6.47 f
+  alu/mult_22/FS_1/U3/Y (AOI21BX2M)                       0.17       6.64 f
+  alu/mult_22/FS_1/U5/Y (XNOR2X2M)                        0.15       6.79 f
+  alu/mult_22/FS_1/SUM[13] (ALU_DW01_add_1)               0.00       6.79 f
+  alu/mult_22/PRODUCT[15] (ALU_DW02_mult_0)               0.00       6.79 f
+  alu/U120/Y (AOI221XLM)                                  0.44       7.23 r
+  alu/U119/Y (INVX2M)                                     0.07       7.29 f
+  alu/ALU_OUT_reg[15]/D (SDFFRQX4M)                       0.00       7.29 f
+  data arrival time                                                  7.29
+
+  clock GATED_CLK (rise edge)                            10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  alu/ALU_OUT_reg[15]/CK (SDFFRQX4M)                      0.00       9.80 r
+  library setup time                                     -0.41       9.39
+  data required time                                                 9.39
+  --------------------------------------------------------------------------
+  data required time                                                 9.39
+  data arrival time                                                 -7.29
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.10
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[7][7]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U83/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U82/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[7] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[7] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[7] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U90/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U111/Y (OAI2BB2X1M)             0.12      91.55 f
+  fifo/mem/mem_reg[7][7]/D (SDFFQX2M)      0.00      91.55 f
+  data arrival time                                  91.55
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[7][7]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.88
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[7][3]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U75/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U74/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[3] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[3] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[3] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U86/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U107/Y (OAI2BB2X1M)             0.12      91.55 f
+  fifo/mem/mem_reg[7][3]/D (SDFFQX2M)      0.00      91.55 f
+  data arrival time                                  91.55
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[7][3]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.88
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[7][6]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U81/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U80/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[6] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[6] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[6] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U89/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U110/Y (OAI2BB2X1M)             0.12      91.55 f
+  fifo/mem/mem_reg[7][6]/D (SDFFQX2M)      0.00      91.55 f
+  data arrival time                                  91.55
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[7][6]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.89
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[7][5]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U79/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U78/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[5] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[5] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[5] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U88/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U109/Y (OAI2BB2X1M)             0.12      91.55 f
+  fifo/mem/mem_reg[7][5]/D (SDFFQX2M)      0.00      91.55 f
+  data arrival time                                  91.55
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[7][5]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.89
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[7][4]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U77/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U76/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[4] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[4] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[4] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U87/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U108/Y (OAI2BB2X1M)             0.12      91.55 f
+  fifo/mem/mem_reg[7][4]/D (SDFFQX2M)      0.00      91.55 f
+  data arrival time                                  91.55
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[7][4]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.89
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[7][2]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U73/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U72/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[2] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[2] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[2] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U85/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U106/Y (OAI2BB2X1M)             0.12      91.55 f
+  fifo/mem/mem_reg[7][2]/D (SDFFQX2M)      0.00      91.55 f
+  data arrival time                                  91.55
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[7][2]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.89
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[7][1]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U71/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U70/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[1] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[1] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[1] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U84/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U105/Y (OAI2BB2X1M)             0.12      91.55 f
+  fifo/mem/mem_reg[7][1]/D (SDFFQX2M)      0.00      91.55 f
+  data arrival time                                  91.55
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[7][1]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.89
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[7][0]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U111/Y (AOI222X1M)                   0.42      91.11 r
+  FSM/U59/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[0] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[0] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[0] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U75/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U78/Y (OAI2BB2X1M)              0.12      91.55 f
+  fifo/mem/mem_reg[7][0]/D (SDFFQX2M)      0.00      91.55 f
+  data arrival time                                  91.55
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[7][0]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.55
+  -----------------------------------------------------------
+  slack (MET)                                         7.89
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[0][7]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U83/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U82/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[7] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[7] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[7] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U90/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U97/Y (OAI2BB2X1M)              0.10      91.53 f
+  fifo/mem/mem_reg[0][7]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[0][7]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[0][3]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U75/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U74/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[3] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[3] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[3] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U86/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U93/Y (OAI2BB2X1M)              0.10      91.53 f
+  fifo/mem/mem_reg[0][3]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[0][3]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[4][7]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U83/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U82/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[7] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[7] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[7] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U90/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U104/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[4][7]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[4][7]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[4][3]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U75/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U74/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[3] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[3] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[3] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U86/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U100/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[4][3]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[4][3]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[1][7]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U83/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U82/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[7] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[7] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[7] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U90/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U146/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[1][7]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[1][7]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[1][3]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U75/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U74/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[3] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[3] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[3] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U86/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U142/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[1][3]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[1][3]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[5][7]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U83/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U82/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[7] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[7] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[7] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U90/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U125/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[5][7]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[5][7]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[5][3]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U75/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U74/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[3] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[3] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[3] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U86/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U121/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[5][3]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[5][3]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[3][7]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U83/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U82/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[7] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[7] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[7] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U90/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U132/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[3][7]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[3][7]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[3][3]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U75/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U74/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[3] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[3] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[3] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U86/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U128/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[3][3]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[3][3]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[2][7]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U83/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U82/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[7] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[7] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[7] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U90/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U139/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[2][7]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[2][7]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+  Startpoint: alu/OUT_VALID_reg
+              (rising edge-triggered flip-flop clocked by GATED_CLK)
+  Endpoint: fifo/mem/mem_reg[2][3]
+            (rising edge-triggered flip-flop clocked by SCAN_CLK)
+  Path Group: SCAN_CLK
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock GATED_CLK (rise edge)             90.00      90.00
+  clock network delay (ideal)              0.00      90.00
+  alu/OUT_VALID_reg/CK (SDFFRQX1M)         0.00      90.00 r
+  alu/OUT_VALID_reg/Q (SDFFRQX1M)          0.48      90.48 f
+  alu/OUT_VALID (ALU_test_1)               0.00      90.48 f
+  FSM/OUT_Valid (SYS_CTRL_test_1)          0.00      90.48 f
+  FSM/U56/Y (NOR2BX2M)                     0.21      90.68 f
+  FSM/U75/Y (AOI222X1M)                    0.42      91.11 r
+  FSM/U74/Y (OAI22X1M)                     0.17      91.28 f
+  FSM/TX_P_Data[3] (SYS_CTRL_test_1)       0.00      91.28 f
+  fifo/WR_DATA[3] (FIFO_test_1)            0.00      91.28 f
+  fifo/mem/write_data[3] (Ram_test_1)      0.00      91.28 f
+  fifo/mem/U86/Y (INVX2M)                  0.15      91.43 r
+  fifo/mem/U135/Y (OAI2BB2X1M)             0.10      91.53 f
+  fifo/mem/mem_reg[2][3]/D (SDFFQX2M)      0.00      91.53 f
+  data arrival time                                  91.53
+
+  clock SCAN_CLK (rise edge)             100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  clock uncertainty                       -0.20      99.80
+  fifo/mem/mem_reg[2][3]/CK (SDFFQX2M)     0.00      99.80 r
+  library setup time                      -0.36      99.44
+  data required time                                 99.44
+  -----------------------------------------------------------
+  data required time                                 99.44
+  data arrival time                                 -91.53
+  -----------------------------------------------------------
+  slack (MET)                                         7.90
+
+
+1
