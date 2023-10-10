@@ -1,0 +1,75 @@
+module ALU #(parameter WIDTH = 8 , OUT_WIDTH = 2*WIDTH , FUNC = 4 )
+			(
+			input wire[WIDTH-1:0] A,
+			input wire[WIDTH-1:0] B,
+			input wire[FUNC-1:0] ALU_FUN,
+			input wire Enable,
+			input wire CLK,
+			input wire RST,
+			output reg[OUT_WIDTH-1:0] ALU_OUT,
+			output reg OUT_VALID
+			);
+reg[OUT_WIDTH-1:0] ALU_Combo ;
+reg out_valid_combo;
+
+//reg[WIDTH-1:0] A_,B_;
+
+//always @(posedge CLK or negedge RST) begin 
+//	if(~RST) begin
+//		A_ <= 0;
+//		B_ <= 0;
+//	end else begin
+//		A_ <= A;
+//		B_ <= B;
+//	end 
+//end
+
+always @(*)begin
+	out_valid_combo = 1'b0;
+	ALU_Combo = 16'b0;
+	if(Enable) begin
+		out_valid_combo = 1'b1; 
+		case(ALU_FUN)
+			4'b0000 : ALU_Combo = A + B;
+			4'b0001 : ALU_Combo = A - B;
+			4'b0010 : ALU_Combo = A * B;
+			4'b0011 : ALU_Combo = A / B;
+			4'b0100 : ALU_Combo = A & B;
+			4'b0101 : ALU_Combo = A | B;
+			4'b0110 : ALU_Combo = ~(A & B);
+			4'b0111 : ALU_Combo = ~(A | B);
+			4'b1000 : ALU_Combo = A ^ B;
+			4'b1001 : ALU_Combo = ~(A ^ B);
+			4'b1010 : ALU_Combo = (A == B);
+			4'b1011 : ALU_Combo = (A > B) ? 16'd2 : 16'd0;
+			4'b1100 : ALU_Combo = (A < B) ? 16'd3 : 16'd0;
+			4'b1101 : ALU_Combo = A>>1;
+			4'b1110 : ALU_Combo = A<<1;
+			default : ALU_Combo = 16'd0;
+		endcase
+	end else begin
+		out_valid_combo = 1'b0;
+		ALU_Combo = 16'b0;
+	end
+end
+
+always @(posedge CLK or negedge RST) begin 
+	if(~RST) begin
+		ALU_OUT <= 0;
+		//OUT_VALID <= 0;
+	end else if(Enable)begin
+		ALU_OUT <= ALU_Combo;
+		//OUT_VALID <= out_valid_combo;
+	end 
+end
+
+always @(posedge CLK or negedge RST) begin 
+	if(~RST) begin
+		OUT_VALID <= 0;
+	end else begin
+		OUT_VALID <= out_valid_combo;
+	end 
+end
+
+
+endmodule 
